@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "evidence-depletion"
 version = "1.0.0"
-description = "Evidence depletion for slot attention: residual evidence modeling that prevents slot collapse under additive superposition (NeurIPS 2026)."
+description = "Evidence depletion for slot attention: residual evidence tracking against slot collapse in additive mixtures (NeurIPS 2026)."
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"

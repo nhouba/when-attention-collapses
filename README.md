@@ -15,7 +15,7 @@ attend to it, and a `γ log e` term in the attention logits pushes later slots t
 have not been explained yet.
 
 <p align="center">
-  <img src="assets/collapse_all_domains.png" width="760" alt="Slot collapse in the five domains of the paper">
+  <img src="https://raw.githubusercontent.com/nhouba/when-attention-collapses/main/assets/collapse_all_domains.png" width="760" alt="Slot collapse in the five domains of the paper">
   <br><em>Fig. 1 of the paper: slot collapse (lower is better) for vanilla, sequential, and linear
   and quadratic evidence-depletion attention. Peak overlap, except LISA (cosine overlap). This
   repository covers the synthetic and FUSS groups.</em>
@@ -26,6 +26,14 @@ reproduction scripts for the synthetic and FUSS experiments. The LISA experiment
 simulation and training pipeline, described in Appendix A of the paper.
 
 ## Installation
+
+To use the module in your own code:
+
+```bash
+pip install evidence-depletion
+```
+
+To run the experiments, clone the repository and install it in editable mode:
 
 ```bash
 git clone https://github.com/nhouba/when-attention-collapses.git
@@ -206,6 +214,6 @@ which is not distributed, and are skipped unless `ED_REFERENCE_CODE` points to i
 
 ## License
 
-MIT, see [LICENSE](LICENSE). FUSS is distributed by its authors under CC BY 4.0.
+MIT, see [LICENSE](https://github.com/nhouba/when-attention-collapses/blob/main/LICENSE). FUSS is distributed by its authors under CC BY 4.0.
 
 This work was funded by the Gravitational Physics Professorship at ETH Zurich.
