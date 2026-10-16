@@ -1,0 +1,1455 @@
+{
+ "_meta": {
+  "artifact": "App. I: Table 11 (amplitude ratio), slot over-provisioning, cardinality, token count, early errors / slot order, Table 12 (latency)",
+  "aggregation": "means over seeds (amp table reports means only); std quoted in text is population std"
+ },
+ "amp_ratio": [
+  {
+   "task": "sinusoids",
+   "method": "vanilla",
+   "amp_ratio": 1.0,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.3,
+    "std": null
+   },
+   "per_seed": {
+    "0": 0.377,
+    "1": 0.229,
+    "2": 0.256,
+    "3": 0.343,
+    "4": 0.288
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.2986,
+    "std_pop": 0.05457,
+    "std_sample": 0.06101
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": [
+     "std_pop"
+    ]
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source amp_ratio/*)",
+   "cosine_recomputed": {
+    "n": 5,
+    "mean": 0.9504,
+    "std_pop": 0.00625,
+    "std_sample": 0.00699
+   }
+  },
+  {
+   "task": "sinusoids",
+   "method": "vanilla",
+   "amp_ratio": 1.5,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.33,
+    "std": null
+   },
+   "per_seed": {
+    "0": 0.301,
+    "1": 0.292,
+    "2": 0.293,
+    "3": 0.481,
+    "4": 0.306
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.3346,
+    "std_pop": 0.07338,
+    "std_sample": 0.08204
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": [
+     "mean"
+    ]
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source amp_ratio/*)",
+   "cosine_recomputed": {
+    "n": 5,
+    "mean": 0.9548,
+    "std_pop": 0.01304,
+    "std_sample": 0.01458
+   }
+  },
+  {
+   "task": "sinusoids",
+   "method": "vanilla",
+   "amp_ratio": 2.0,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.3,
+    "std": null
+   },
+   "per_seed": {
+    "0": 0.304,
+    "1": 0.325,
+    "2": 0.275,
+    "3": 0.274,
+    "4": 0.314
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.2984,
+    "std_pop": 0.02062,
+    "std_sample": 0.02305
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source amp_ratio/*)",
+   "cosine_recomputed": {
+    "n": 5,
+    "mean": 0.9576,
+    "std_pop": 0.01348,
+    "std_sample": 0.01508
+   }
+  },
+  {
+   "task": "sinusoids",
+   "method": "vanilla",
+   "amp_ratio": 3.0,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.34,
+    "std": null
+   },
+   "per_seed": {
+    "0": 0.317,
+    "1": 0.301,
+    "2": 0.256,
+    "3": 0.535,
+    "4": 0.291
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.34,
+    "std_pop": 0.09953,
+    "std_sample": 0.11128
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source amp_ratio/*)",
+   "cosine_recomputed": {
+    "n": 5,
+    "mean": 0.9578,
+    "std_pop": 0.02604,
+    "std_sample": 0.02912
+   }
+  },
+  {
+   "task": "sinusoids",
+   "method": "vanilla",
+   "amp_ratio": 5.0,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.34,
+    "std": null
+   },
+   "per_seed": {
+    "0": 0.459,
+    "1": 0.37,
+    "2": 0.254,
+    "3": 0.276,
+    "4": 0.33
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.3378,
+    "std_pop": 0.07298,
+    "std_sample": 0.08159
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source amp_ratio/*)",
+   "cosine_recomputed": {
+    "n": 5,
+    "mean": 0.9796,
+    "std_pop": 0.01834,
+    "std_sample": 0.0205
+   }
+  },
+  {
+   "task": "sinusoids",
+   "method": "vanilla",
+   "amp_ratio": 10.0,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.24,
+    "std": null
+   },
+   "per_seed": {
+    "0": 0.376,
+    "1": 0.277,
+    "2": 0.16,
+    "3": 0.211,
+    "4": 0.178
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.2404,
+    "std_pop": 0.07868,
+    "std_sample": 0.08796
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source amp_ratio/*)",
+   "cosine_recomputed": {
+    "n": 5,
+    "mean": 0.9066,
+    "std_pop": 0.039,
+    "std_sample": 0.0436
+   }
+  },
+  {
+   "task": "sinusoids",
+   "method": "sequential",
+   "amp_ratio": 1.0,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": null,
+    "std": null
+   },
+   "per_seed": {
+    "0": 0.883,
+    "1": 0.913,
+    "2": 0.892,
+    "3": 0.888,
+    "4": 0.911
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.8974,
+    "std_pop": 0.01227,
+    "std_sample": 0.01372
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source amp_ratio/*)",
+   "cosine_recomputed": {
+    "n": 5,
+    "mean": 0.976,
+    "std_pop": 0.01208,
+    "std_sample": 0.01351
+   }
+  },
+  {
+   "task": "sinusoids",
+   "method": "sequential",
+   "amp_ratio": 1.5,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": null,
+    "std": null
+   },
+   "per_seed": {
+    "0": 0.966,
+    "1": 0.948,
+    "2": 0.929,
+    "3": 0.962,
+    "4": 0.939
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.9488,
+    "std_pop": 0.01385,
+    "std_sample": 0.01548
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source amp_ratio/*)",
+   "cosine_recomputed": {
+    "n": 5,
+    "mean": 0.9852,
+    "std_pop": 0.00838,
+    "std_sample": 0.00936
+   }
+  },
+  {
+   "task": "sinusoids",
+   "method": "sequential",
+   "amp_ratio": 2.0,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": null,
+    "std": null
+   },
+   "per_seed": {
+    "0": 0.967,
+    "1": 0.95,
+    "2": 0.918,
+    "3": 0.936,
+    "4": 0.964
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.947,
+    "std_pop": 0.01822,
+    "std_sample": 0.02037
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source amp_ratio/*)",
+   "cosine_recomputed": {
+    "n": 5,
+    "mean": 0.9826,
+    "std_pop": 0.00388,
+    "std_sample": 0.00434
+   }
+  },
+  {
+   "task": "sinusoids",
+   "method": "sequential",
+   "amp_ratio": 3.0,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": null,
+    "std": null
+   },
+   "per_seed": {
+    "0": 0.94,
+    "1": 0.994,
+    "2": 0.946,
+    "3": 0.975,
+    "4": 0.95
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.961,
+    "std_pop": 0.02036,
+    "std_sample": 0.02276
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source amp_ratio/*)",
+   "cosine_recomputed": {
+    "n": 5,
+    "mean": 0.9878,
+    "std_pop": 0.00849,
+    "std_sample": 0.0095
+   }
+  },
+  {
+   "task": "sinusoids",
+   "method": "sequential",
+   "amp_ratio": 5.0,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": null,
+    "std": null
+   },
+   "per_seed": {
+    "0": 0.999,
+    "1": 0.994,
+    "2": 0.973,
+    "3": 0.987,
+    "4": 0.991
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.9888,
+    "std_pop": 0.00882,
+    "std_sample": 0.00986
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source amp_ratio/*)",
+   "cosine_recomputed": {
+    "n": 5,
+    "mean": 0.9978,
+    "std_pop": 0.00194,
+    "std_sample": 0.00217
+   }
+  },
+  {
+   "task": "sinusoids",
+   "method": "sequential",
+   "amp_ratio": 10.0,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": null,
+    "std": null
+   },
+   "per_seed": {
+    "0": 0.989,
+    "1": 0.975,
+    "2": 0.797,
+    "3": 0.981,
+    "4": 0.986
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.9456,
+    "std_pop": 0.07445,
+    "std_sample": 0.08324
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": [
+     "std_pop"
+    ]
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source amp_ratio/*)",
+   "cosine_recomputed": {
+    "n": 5,
+    "mean": 0.9826,
+    "std_pop": 0.02982,
+    "std_sample": 0.03334
+   }
+  },
+  {
+   "task": "sinusoids",
+   "method": "evidence_linear",
+   "amp_ratio": 1.0,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.37,
+    "std": null
+   },
+   "per_seed": {
+    "0": 0.066,
+    "1": 0.736,
+    "2": 0.179,
+    "3": 0.15,
+    "4": 0.736
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.3734,
+    "std_pop": 0.29838,
+    "std_sample": 0.3336
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source amp_ratio/*)",
+   "cosine_recomputed": {
+    "n": 5,
+    "mean": 0.8692,
+    "std_pop": 0.0922,
+    "std_sample": 0.10308
+   }
+  },
+  {
+   "task": "sinusoids",
+   "method": "evidence_linear",
+   "amp_ratio": 1.5,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.41,
+    "std": null
+   },
+   "per_seed": {
+    "0": 0.74,
+    "1": 0.588,
+    "2": 0.032,
+    "3": 0.396,
+    "4": 0.286
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.4084,
+    "std_pop": 0.24455,
+    "std_sample": 0.27342
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": [
+     "std_pop"
+    ]
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source amp_ratio/*)",
+   "cosine_recomputed": {
+    "n": 5,
+    "mean": 0.8474,
+    "std_pop": 0.19117,
+    "std_sample": 0.21374
+   }
+  },
+  {
+   "task": "sinusoids",
+   "method": "evidence_linear",
+   "amp_ratio": 2.0,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.26,
+    "std": null
+   },
+   "per_seed": {
+    "0": 0.601,
+    "1": 0.357,
+    "2": 0.032,
+    "3": 0.275,
+    "4": 0.017
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.2564,
+    "std_pop": 0.21766,
+    "std_sample": 0.24335
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source amp_ratio/*)",
+   "cosine_recomputed": {
+    "n": 5,
+    "mean": 0.8162,
+    "std_pop": 0.13624,
+    "std_sample": 0.15232
+   }
+  },
+  {
+   "task": "sinusoids",
+   "method": "evidence_linear",
+   "amp_ratio": 3.0,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.21,
+    "std": null
+   },
+   "per_seed": {
+    "0": 0.053,
+    "1": 0.238,
+    "2": 0.39,
+    "3": 0.038,
+    "4": 0.334
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.2106,
+    "std_pop": 0.14338,
+    "std_sample": 0.16031
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source amp_ratio/*)",
+   "cosine_recomputed": {
+    "n": 5,
+    "mean": 0.7666,
+    "std_pop": 0.16736,
+    "std_sample": 0.18712
+   }
+  },
+  {
+   "task": "sinusoids",
+   "method": "evidence_linear",
+   "amp_ratio": 5.0,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.12,
+    "std": null
+   },
+   "per_seed": {
+    "0": 0.048,
+    "1": 0.158,
+    "2": 0.048,
+    "3": 0.209,
+    "4": 0.116
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.1158,
+    "std_pop": 0.06271,
+    "std_sample": 0.07011
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source amp_ratio/*)",
+   "cosine_recomputed": {
+    "n": 5,
+    "mean": 0.6384,
+    "std_pop": 0.14757,
+    "std_sample": 0.16499
+   }
+  },
+  {
+   "task": "sinusoids",
+   "method": "evidence_linear",
+   "amp_ratio": 10.0,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.19,
+    "std": null
+   },
+   "per_seed": {
+    "0": 0.024,
+    "1": 0.067,
+    "2": 0.029,
+    "3": 0.545,
+    "4": 0.268
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.1866,
+    "std_pop": 0.20033,
+    "std_sample": 0.22397
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source amp_ratio/*)",
+   "cosine_recomputed": {
+    "n": 5,
+    "mean": 0.5668,
+    "std_pop": 0.2421,
+    "std_sample": 0.27067
+   }
+  }
+ ],
+ "s_sweep": [
+  {
+   "method": "vanilla",
+   "n_slots": 5,
+   "paper_peak_mean": 0.28,
+   "log_summary": {
+    "peak_mean": 0.277,
+    "peak_std_pop": 0.062,
+    "cosine_mean": 0.884,
+    "cosine_std_pop": 0.028,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "summary block of the run log (per-seed lines not retained)"
+  },
+  {
+   "method": "evidence_linear",
+   "n_slots": 5,
+   "paper_peak_mean": 0.035,
+   "log_summary": {
+    "peak_mean": 0.035,
+    "peak_std_pop": 0.03,
+    "cosine_mean": 0.272,
+    "cosine_std_pop": 0.136,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "summary block of the run log (per-seed lines not retained)"
+  },
+  {
+   "method": "vanilla",
+   "n_slots": 8,
+   "paper_peak_mean": 0.33,
+   "log_summary": {
+    "peak_mean": 0.325,
+    "peak_std_pop": 0.053,
+    "cosine_mean": 0.947,
+    "cosine_std_pop": 0.011,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "summary block of the run log (per-seed lines not retained)"
+  },
+  {
+   "method": "evidence_linear",
+   "n_slots": 8,
+   "paper_peak_mean": 0.082,
+   "log_summary": {
+    "peak_mean": 0.082,
+    "peak_std_pop": 0.095,
+    "cosine_mean": 0.477,
+    "cosine_std_pop": 0.282,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "summary block of the run log (per-seed lines not retained)"
+  },
+  {
+   "method": "vanilla",
+   "n_slots": 12,
+   "paper_peak_mean": 0.32,
+   "log_summary": {
+    "peak_mean": 0.322,
+    "peak_std_pop": 0.048,
+    "cosine_mean": 0.934,
+    "cosine_std_pop": 0.029,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "summary block of the run log (per-seed lines not retained)"
+  },
+  {
+   "method": "evidence_linear",
+   "n_slots": 12,
+   "paper_peak_mean": 0.037,
+   "log_summary": {
+    "peak_mean": 0.037,
+    "peak_std_pop": 0.039,
+    "cosine_mean": 0.334,
+    "cosine_std_pop": 0.169,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "summary block of the run log (per-seed lines not retained)"
+  },
+  {
+   "method": "vanilla",
+   "n_slots": 16,
+   "paper_peak_mean": 0.42,
+   "log_summary": {
+    "peak_mean": 0.423,
+    "peak_std_pop": 0.012,
+    "cosine_mean": 0.936,
+    "cosine_std_pop": 0.052,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "summary block of the run log (per-seed lines not retained)"
+  },
+  {
+   "method": "evidence_linear",
+   "n_slots": 16,
+   "paper_peak_mean": 0.092,
+   "log_summary": {
+    "peak_mean": 0.092,
+    "peak_std_pop": 0.026,
+    "cosine_mean": 0.515,
+    "cosine_std_pop": 0.028,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "summary block of the run log (per-seed lines not retained)"
+  }
+ ],
+ "bigk": [
+  {
+   "method": "vanilla",
+   "n_slots": 9,
+   "max_K": 8,
+   "paper_peak_mean": 0.54,
+   "per_seed_in_logs": {
+    "2": 0.538
+   },
+   "log_summary": {
+    "peak_mean": 0.537,
+    "peak_std_pop": 0.031,
+    "cosine_mean": 0.889,
+    "cosine_std_pop": 0.015
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source stress_slots)"
+  },
+  {
+   "method": "sequential",
+   "n_slots": 9,
+   "max_K": 8,
+   "paper_peak_mean": null,
+   "per_seed_in_logs": {
+    "0": 0.917,
+    "1": 0.917,
+    "2": 0.915
+   },
+   "log_summary": {
+    "peak_mean": 0.916,
+    "peak_std_pop": 0.001,
+    "cosine_mean": 0.953,
+    "cosine_std_pop": 0.005
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source stress_slots)"
+  },
+  {
+   "method": "evidence_linear",
+   "n_slots": 9,
+   "max_K": 8,
+   "paper_peak_mean": 0.24,
+   "per_seed_in_logs": {
+    "0": 0.35,
+    "1": 0.281,
+    "2": 0.1
+   },
+   "log_summary": {
+    "peak_mean": 0.244,
+    "peak_std_pop": 0.105,
+    "cosine_mean": 0.452,
+    "cosine_std_pop": 0.082
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source stress_slots)"
+  }
+ ],
+ "token_count": [
+  {
+   "l_tokens": 8,
+   "d_model": 64,
+   "n_iterations": 3,
+   "method": "vanilla",
+   "log_summary": {
+    "peak_mean": 0.329,
+    "peak_std_pop": 0.025,
+    "cosine_mean": 0.89,
+    "cosine_std_pop": 0.01,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "l_tokens": 8,
+   "d_model": 64,
+   "n_iterations": 3,
+   "method": "evidence_linear",
+   "log_summary": {
+    "peak_mean": 0.1,
+    "peak_std_pop": 0.025,
+    "cosine_mean": 0.346,
+    "cosine_std_pop": 0.092,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "l_tokens": 16,
+   "d_model": 64,
+   "n_iterations": 3,
+   "method": "vanilla",
+   "log_summary": {
+    "peak_mean": 0.277,
+    "peak_std_pop": 0.062,
+    "cosine_mean": 0.884,
+    "cosine_std_pop": 0.028,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "l_tokens": 16,
+   "d_model": 64,
+   "n_iterations": 3,
+   "method": "evidence_linear",
+   "log_summary": {
+    "peak_mean": 0.035,
+    "peak_std_pop": 0.03,
+    "cosine_mean": 0.272,
+    "cosine_std_pop": 0.136,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "l_tokens": 32,
+   "d_model": 64,
+   "n_iterations": 3,
+   "method": "vanilla",
+   "log_summary": {
+    "peak_mean": 0.208,
+    "peak_std_pop": 0.096,
+    "cosine_mean": 0.918,
+    "cosine_std_pop": 0.043,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "l_tokens": 32,
+   "d_model": 64,
+   "n_iterations": 3,
+   "method": "evidence_linear",
+   "log_summary": {
+    "peak_mean": 0.016,
+    "peak_std_pop": 0.009,
+    "cosine_mean": 0.491,
+    "cosine_std_pop": 0.056,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "l_tokens": 64,
+   "d_model": 64,
+   "n_iterations": 3,
+   "method": "vanilla",
+   "log_summary": {
+    "peak_mean": 0.273,
+    "peak_std_pop": 0.178,
+    "cosine_mean": 0.902,
+    "cosine_std_pop": 0.011,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "l_tokens": 64,
+   "d_model": 64,
+   "n_iterations": 3,
+   "method": "evidence_linear",
+   "log_summary": {
+    "peak_mean": 0.484,
+    "peak_std_pop": 0.396,
+    "cosine_mean": 0.87,
+    "cosine_std_pop": 0.094,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')",
+   "paper": {
+    "mean": 0.484,
+    "std": 0.396
+   }
+  },
+  {
+   "l_tokens": 16,
+   "d_model": 32,
+   "n_iterations": 3,
+   "method": "vanilla",
+   "log_summary": {
+    "peak_mean": 0.264,
+    "peak_std_pop": 0.035,
+    "cosine_mean": 0.945,
+    "cosine_std_pop": 0.04,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "l_tokens": 16,
+   "d_model": 32,
+   "n_iterations": 3,
+   "method": "evidence_linear",
+   "log_summary": {
+    "peak_mean": 0.041,
+    "peak_std_pop": 0.036,
+    "cosine_mean": 0.475,
+    "cosine_std_pop": 0.159,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "l_tokens": 16,
+   "d_model": 128,
+   "n_iterations": 3,
+   "method": "vanilla",
+   "log_summary": {
+    "peak_mean": 0.264,
+    "peak_std_pop": 0.057,
+    "cosine_mean": 0.818,
+    "cosine_std_pop": 0.025,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "l_tokens": 16,
+   "d_model": 128,
+   "n_iterations": 3,
+   "method": "evidence_linear",
+   "log_summary": {
+    "peak_mean": 0.006,
+    "peak_std_pop": 0.008,
+    "cosine_mean": 0.095,
+    "cosine_std_pop": 0.018,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "l_tokens": 16,
+   "d_model": 64,
+   "n_iterations": 1,
+   "method": "vanilla",
+   "log_summary": {
+    "peak_mean": 0.179,
+    "peak_std_pop": 0.065,
+    "cosine_mean": 0.822,
+    "cosine_std_pop": 0.063,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "l_tokens": 16,
+   "d_model": 64,
+   "n_iterations": 1,
+   "method": "evidence_linear",
+   "log_summary": {
+    "peak_mean": 0.004,
+    "peak_std_pop": 0.001,
+    "cosine_mean": 0.137,
+    "cosine_std_pop": 0.032,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "l_tokens": 16,
+   "d_model": 64,
+   "n_iterations": 5,
+   "method": "vanilla",
+   "log_summary": {
+    "peak_mean": 0.262,
+    "peak_std_pop": 0.036,
+    "cosine_mean": 0.884,
+    "cosine_std_pop": 0.015,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "l_tokens": 16,
+   "d_model": 64,
+   "n_iterations": 5,
+   "method": "evidence_linear",
+   "log_summary": {
+    "peak_mean": 0.023,
+    "peak_std_pop": 0.012,
+    "cosine_mean": 0.295,
+    "cosine_std_pop": 0.14,
+    "n": 3
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  }
+ ],
+ "order_studies": {
+  "forced_error_none": {
+   "collapse": {
+    "n": 3,
+    "mean": 0.03913,
+    "std_pop": 0.03109,
+    "std_sample": 0.03808
+   },
+   "recovery_remaining": {
+    "n": 3,
+    "mean": 0.1887,
+    "std_pop": 0.02136,
+    "std_sample": 0.02616
+   }
+  },
+  "forced_error_uniform": {
+   "collapse": {
+    "n": 3,
+    "mean": 0.1441,
+    "std_pop": 0.02016,
+    "std_sample": 0.02469
+   },
+   "recovery_remaining": {
+    "n": 3,
+    "mean": 0.19473,
+    "std_pop": 0.02473,
+    "std_sample": 0.03028
+   }
+  },
+  "forced_error_wrong_peak": {
+   "collapse": {
+    "n": 3,
+    "mean": 0.00703,
+    "std_pop": 0.00456,
+    "std_sample": 0.00558
+   },
+   "recovery_remaining": {
+    "n": 3,
+    "mean": 0.20773,
+    "std_pop": 0.01056,
+    "std_sample": 0.01293
+   }
+  },
+  "evidence_ordered_raw": [
+   {
+    "task": "sinusoids",
+    "method": "evidence_linear",
+    "seed": 0,
+    "sweep": "order_studies",
+    "study": "evidence_ordered",
+    "perturbation": null,
+    "canonical_collapse_rate": 0.0248,
+    "canonical_mean_attn_overlap": 0.1411,
+    "canonical_param_mae": 2.027309,
+    "canonical_mae_frequency": 1.671361,
+    "greedy_collapse_rate": 0.0484,
+    "greedy_mean_attn_overlap": 0.1738,
+    "greedy_param_mae": 2.022964,
+    "greedy_mae_frequency": 1.669882
+   },
+   {
+    "task": "sinusoids",
+    "method": "evidence_linear",
+    "seed": 1,
+    "sweep": "order_studies",
+    "study": "evidence_ordered",
+    "perturbation": null,
+    "canonical_collapse_rate": 0.0103,
+    "canonical_mean_attn_overlap": 0.2122,
+    "canonical_param_mae": 1.997836,
+    "canonical_mae_frequency": 1.604378,
+    "greedy_collapse_rate": 0.0168,
+    "greedy_mean_attn_overlap": 0.2482,
+    "greedy_param_mae": 1.994172,
+    "greedy_mae_frequency": 1.610152
+   },
+   {
+    "task": "sinusoids",
+    "method": "evidence_linear",
+    "seed": 2,
+    "sweep": "order_studies",
+    "study": "evidence_ordered",
+    "perturbation": null,
+    "canonical_collapse_rate": 0.0823,
+    "canonical_mean_attn_overlap": 0.4669,
+    "canonical_param_mae": 1.961848,
+    "canonical_mae_frequency": 1.650695,
+    "greedy_collapse_rate": 0.1448,
+    "greedy_mean_attn_overlap": 0.4939,
+    "greedy_param_mae": 1.964843,
+    "greedy_mae_frequency": 1.645714
+   }
+  ],
+  "order_sensitivity_raw": [
+   {
+    "task": "sinusoids",
+    "method": "evidence_linear",
+    "seed": 0,
+    "sweep": "order_studies",
+    "study": "order_sensitivity",
+    "perturbation": null,
+    "n_orders": 10,
+    "canonical_collapse_rate": 0.0248,
+    "canonical_mean_attn_overlap": 0.1411,
+    "canonical_param_mae": 2.027309,
+    "canonical_mae_frequency": 1.671361,
+    "random_collapse_rate_mean": 0.04628,
+    "random_collapse_rate_std": 0.016899,
+    "random_mean_attn_overlap_mean": 0.17728,
+    "random_mean_attn_overlap_std": 0.01138,
+    "random_param_mae_mean": 2.021481,
+    "random_param_mae_std": 0.00376,
+    "random_mae_frequency_mean": 1.666297,
+    "random_mae_frequency_std": 0.003161,
+    "ensemble_collapse_rate": 0.4026,
+    "ensemble_mean_attn_overlap": 0.8097,
+    "ensemble_param_mae": 2.182294,
+    "ensemble_mae_frequency": 1.725146
+   },
+   {
+    "task": "sinusoids",
+    "method": "evidence_linear",
+    "seed": 1,
+    "sweep": "order_studies",
+    "study": "order_sensitivity",
+    "perturbation": null,
+    "n_orders": 10,
+    "canonical_collapse_rate": 0.0103,
+    "canonical_mean_attn_overlap": 0.2122,
+    "canonical_param_mae": 1.997836,
+    "canonical_mae_frequency": 1.604378,
+    "random_collapse_rate_mean": 0.02607,
+    "random_collapse_rate_std": 0.00531,
+    "random_mean_attn_overlap_mean": 0.2576,
+    "random_mean_attn_overlap_std": 0.039141,
+    "random_param_mae_mean": 1.99215,
+    "random_param_mae_std": 0.004478,
+    "random_mae_frequency_mean": 1.602597,
+    "random_mae_frequency_std": 0.005795,
+    "ensemble_collapse_rate": 0.4206,
+    "ensemble_mean_attn_overlap": 0.7588,
+    "ensemble_param_mae": 2.182882,
+    "ensemble_mae_frequency": 1.684848
+   },
+   {
+    "task": "sinusoids",
+    "method": "evidence_linear",
+    "seed": 2,
+    "sweep": "order_studies",
+    "study": "order_sensitivity",
+    "perturbation": null,
+    "n_orders": 10,
+    "canonical_collapse_rate": 0.0823,
+    "canonical_mean_attn_overlap": 0.4669,
+    "canonical_param_mae": 1.961848,
+    "canonical_mae_frequency": 1.650695,
+    "random_collapse_rate_mean": 0.12576,
+    "random_collapse_rate_std": 0.041038,
+    "random_mean_attn_overlap_mean": 0.45194,
+    "random_mean_attn_overlap_std": 0.051741,
+    "random_param_mae_mean": 1.960362,
+    "random_param_mae_std": 0.004071,
+    "random_mae_frequency_mean": 1.648193,
+    "random_mae_frequency_std": 0.004904,
+    "ensemble_collapse_rate": 0.4143,
+    "ensemble_mean_attn_overlap": 0.9158,
+    "ensemble_param_mae": 2.173808,
+    "ensemble_mae_frequency": 1.767968
+   }
+  ],
+  "paper": {
+   "collapse_none_to_uniform": [
+    0.039,
+    0.144
+   ],
+   "recovery_none_uniform_wrongpeak": [
+    0.189,
+    0.195,
+    0.208
+   ],
+   "greedy_vs_canonical_collapse": [
+    0.07,
+    0.039
+   ],
+   "random_order_delta": "< 0.05 within a seed (seed means)"
+  },
+  "provenance": "per_seed_file",
+  "source": "raw/order_studies_results.json"
+ },
+ "latency": [
+  {
+   "mode": "vanilla",
+   "n_slots": 5,
+   "mean_ms": 3.4672,
+   "std_ms": 0.0615,
+   "paper_ms": 3.5,
+   "device_name": "NVIDIA GH200 120GB",
+   "provenance": "per_seed_file",
+   "source": "raw/latency_results.json"
+  },
+  {
+   "mode": "vanilla",
+   "n_slots": 10,
+   "mean_ms": 3.2487,
+   "std_ms": 0.1006,
+   "paper_ms": 3.2,
+   "device_name": "NVIDIA GH200 120GB",
+   "provenance": "per_seed_file",
+   "source": "raw/latency_results.json"
+  },
+  {
+   "mode": "vanilla",
+   "n_slots": 20,
+   "mean_ms": 3.2638,
+   "std_ms": 0.0698,
+   "paper_ms": 3.3,
+   "device_name": "NVIDIA GH200 120GB",
+   "provenance": "per_seed_file",
+   "source": "raw/latency_results.json"
+  },
+  {
+   "mode": "vanilla",
+   "n_slots": 40,
+   "mean_ms": 3.2846,
+   "std_ms": 0.046,
+   "paper_ms": 3.3,
+   "device_name": "NVIDIA GH200 120GB",
+   "provenance": "per_seed_file",
+   "source": "raw/latency_results.json"
+  },
+  {
+   "mode": "evidence_linear",
+   "n_slots": 5,
+   "mean_ms": 13.2008,
+   "std_ms": 0.0988,
+   "paper_ms": 13.2,
+   "device_name": "NVIDIA GH200 120GB",
+   "provenance": "per_seed_file",
+   "source": "raw/latency_results.json"
+  },
+  {
+   "mode": "evidence_linear",
+   "n_slots": 10,
+   "mean_ms": 26.0826,
+   "std_ms": 0.2557,
+   "paper_ms": 26.1,
+   "device_name": "NVIDIA GH200 120GB",
+   "provenance": "per_seed_file",
+   "source": "raw/latency_results.json"
+  },
+  {
+   "mode": "evidence_linear",
+   "n_slots": 20,
+   "mean_ms": 50.4628,
+   "std_ms": 0.3765,
+   "paper_ms": 50.5,
+   "device_name": "NVIDIA GH200 120GB",
+   "provenance": "per_seed_file",
+   "source": "raw/latency_results.json"
+  },
+  {
+   "mode": "evidence_linear",
+   "n_slots": 40,
+   "mean_ms": 101.0784,
+   "std_ms": 0.8347,
+   "paper_ms": 101.1,
+   "device_name": "NVIDIA GH200 120GB",
+   "provenance": "per_seed_file",
+   "source": "raw/latency_results.json"
+  }
+ ],
+ "amp_ratio_note": "evidence_linear at ratio 1.5: seeds 3 and 4 were run twice (GPU nondeterminism between reruns). The run used for the paper gives 0.396 and 0.286 (mean over seeds 0.41); the other copy gives a mean of 0.453.",
+ "s_sweep_depletion_and_kacc": {
+  "paper": {
+   "depleted_matched_S5_to_S16": [
+    0.88,
+    0.71
+   ],
+   "depleted_unmatched_S5_to_S16": [
+    0.91,
+    0.56
+   ],
+   "exact_K_accuracy_S>=8": "~0 for both"
+  },
+  "provenance": "reported_only",
+  "status": "Summary values as reported in the paper; per-seed files not retained (only the S = 16 values were kept). A rerun of --stress-sweep regenerates them in the fields depleted_matched, depleted_unmatched and k_accuracy.",
+  "reported_values": {
+   "S16_depleted_matched": 0.712,
+   "S16_depleted_unmatched": 0.559,
+   "S16_k_accuracy_vanilla": 0.0,
+   "S16_k_accuracy_evidence": 0.0
+  }
+ },
+ "weak_not_in_paper": {
+  "config": "K=6 equal amplitudes, S=7",
+  "log_summary": {
+   "vanilla": 0.672,
+   "sequential": 0.998,
+   "evidence_linear": 0.085
+  },
+  "source": "raw/log_records.json (source stress_slots)"
+ },
+ "token_count_note": "The paper reports only the L axis: stable up to L = 32, L = 64 evidence_linear 0.484 +- 0.396 (3 seeds). The d and I axes were run but are not reported.",
+ "latency_fit": [
+  {
+   "sweep": "latency",
+   "record_type": "scaling_fit",
+   "mode": "vanilla",
+   "seq_len": 128,
+   "device": "cuda",
+   "n_iter": 3,
+   "S_values": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "ms_per_slot": -0.00309,
+   "intercept_ms": 3.37406,
+   "r2": 0.22099
+  },
+  {
+   "sweep": "latency",
+   "record_type": "scaling_fit",
+   "mode": "sequential",
+   "seq_len": 128,
+   "device": "cuda",
+   "n_iter": 3,
+   "S_values": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "ms_per_slot": 2.8601,
+   "intercept_ms": 10.8017,
+   "r2": 0.99746
+  },
+  {
+   "sweep": "latency",
+   "record_type": "scaling_fit",
+   "mode": "evidence_linear",
+   "seq_len": 128,
+   "device": "cuda",
+   "n_iter": 3,
+   "S_values": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "ms_per_slot": 2.5061,
+   "intercept_ms": 0.71674,
+   "r2": 0.99994
+  }
+ ]
+}

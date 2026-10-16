@@ -1,0 +1,279 @@
+{
+ "_meta": {
+  "artifact": "Table 7 (App. E)",
+  "command": "experiments/synthetic.py --gamma-sweep --tau-sweep --tasks sinusoids --seeds 3 --epochs 200 --n-train 5000 --n-test 1000",
+  "json_selector": "sweep=='sensitivity', method=='evidence_g{gamma}_t{tau}' (trains evidence_quadratic)",
+  "aggregation": "mean and population std over seeds 0-2"
+ },
+ "cells": [
+  {
+   "task": "sinusoids",
+   "gamma": 1,
+   "tau": 0.1,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.35,
+    "std": 0.45
+   },
+   "per_seed": {
+    "0": 0.9823,
+    "1": 0.0224,
+    "2": 0.0344
+   },
+   "recomputed": {
+    "n": 3,
+    "mean": 0.34637,
+    "std_pop": 0.4497,
+    "std_sample": 0.55077
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": []
+   },
+   "provenance": "per_seed_file",
+   "source": "raw/sensitivity_ablation_results.json"
+  },
+  {
+   "task": "sinusoids",
+   "gamma": 1,
+   "tau": 0.3,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.03,
+    "std": 0.01
+   },
+   "per_seed": {
+    "0": 0.0426,
+    "1": 0.0112,
+    "2": 0.043
+   },
+   "recomputed": {
+    "n": 3,
+    "mean": 0.03227,
+    "std_pop": 0.0149,
+    "std_sample": 0.01825
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": [
+     "std_pop"
+    ]
+   },
+   "provenance": "per_seed_file",
+   "source": "raw/sensitivity_ablation_results.json"
+  },
+  {
+   "task": "sinusoids",
+   "gamma": 1,
+   "tau": 1.0,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.76,
+    "std": 0.17
+   },
+   "per_seed": {
+    "0": 0.892,
+    "1": 0.8637,
+    "2": 0.5141
+   },
+   "recomputed": {
+    "n": 3,
+    "mean": 0.7566,
+    "std_pop": 0.17186,
+    "std_sample": 0.21049
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": []
+   },
+   "provenance": "per_seed_file",
+   "source": "raw/sensitivity_ablation_results.json"
+  },
+  {
+   "task": "sinusoids",
+   "gamma": 3,
+   "tau": 0.1,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.31,
+    "std": 0.42
+   },
+   "per_seed": {
+    "0": 0.8994,
+    "1": 0.028,
+    "2": 0.0085
+   },
+   "recomputed": {
+    "n": 3,
+    "mean": 0.31197,
+    "std_pop": 0.41545,
+    "std_sample": 0.50883
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": [
+     "std_pop"
+    ]
+   },
+   "provenance": "per_seed_file",
+   "source": "raw/sensitivity_ablation_results.json"
+  },
+  {
+   "task": "sinusoids",
+   "gamma": 3,
+   "tau": 0.3,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.06,
+    "std": 0.05
+   },
+   "per_seed": {
+    "0": 0.02,
+    "1": 0.1293,
+    "2": 0.0163
+   },
+   "recomputed": {
+    "n": 3,
+    "mean": 0.0552,
+    "std_pop": 0.05242,
+    "std_sample": 0.0642
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": [
+     "mean"
+    ]
+   },
+   "provenance": "per_seed_file",
+   "source": "raw/sensitivity_ablation_results.json"
+  },
+  {
+   "task": "sinusoids",
+   "gamma": 3,
+   "tau": 1.0,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.69,
+    "std": 0.33
+   },
+   "per_seed": {
+    "0": 0.8732,
+    "1": 0.9738,
+    "2": 0.2215
+   },
+   "recomputed": {
+    "n": 3,
+    "mean": 0.6895,
+    "std_pop": 0.33346,
+    "std_sample": 0.40841
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": []
+   },
+   "provenance": "per_seed_file",
+   "source": "raw/sensitivity_ablation_results.json"
+  },
+  {
+   "task": "sinusoids",
+   "gamma": 10,
+   "tau": 0.1,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.02,
+    "std": 0.01
+   },
+   "per_seed": {
+    "0": 0.03,
+    "1": 0.0372,
+    "2": 0.0077
+   },
+   "recomputed": {
+    "n": 3,
+    "mean": 0.02497,
+    "std_pop": 0.01256,
+    "std_sample": 0.01538
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": [
+     "mean"
+    ]
+   },
+   "provenance": "per_seed_file",
+   "source": "raw/sensitivity_ablation_results.json"
+  },
+  {
+   "task": "sinusoids",
+   "gamma": 10,
+   "tau": 0.3,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.03,
+    "std": 0.01
+   },
+   "per_seed": {
+    "0": 0.0456,
+    "1": 0.0144,
+    "2": 0.0386
+   },
+   "recomputed": {
+    "n": 3,
+    "mean": 0.03287,
+    "std_pop": 0.01337,
+    "std_sample": 0.01637
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": []
+   },
+   "provenance": "per_seed_file",
+   "source": "raw/sensitivity_ablation_results.json"
+  },
+  {
+   "task": "sinusoids",
+   "gamma": 10,
+   "tau": 1.0,
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.26,
+    "std": 0.25
+   },
+   "per_seed": {
+    "0": 0.6122,
+    "1": 0.1302,
+    "2": 0.0442
+   },
+   "recomputed": {
+    "n": 3,
+    "mean": 0.2622,
+    "std_pop": 0.24997,
+    "std_sample": 0.30614
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": []
+   },
+   "provenance": "per_seed_file",
+   "source": "raw/sensitivity_ablation_results.json"
+  }
+ ]
+}

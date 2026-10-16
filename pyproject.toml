@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evidence-depletion"
+version = "1.0.0"
+description = "Evidence depletion for slot attention: residual evidence modeling that prevents slot collapse under additive superposition (NeurIPS 2026)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Niklas Houba" }]
+keywords = ["slot attention", "object-centric learning", "source separation", "attention", "pytorch"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch>=2.1",
+    "numpy>=1.24",
+    "scipy>=1.10",
+]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.7"]
+dev = ["pytest>=7.4", "ruff>=0.17"]
+
+[project.urls]
+Paper = "https://arxiv.org/abs/2605.02323"
+Repository = "https://github.com/nhouba/when-attention-collapses"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+extend-exclude = [".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "N", "SIM"]
+ignore = [
+    "N806",  # tensor-shape names (B, L, D, K) follow the paper's notation
+    "N803",  # same for arguments such as N, K_range, K_true
+    "N812",  # `import torch.nn.functional as F` is the PyTorch convention
+    "SIM108", # explicit if/else kept where it mirrors the formula
+    "SIM300", # false positives: upper-case tensor names (K) are not constants
+    "B905",  # zip() over equal-length sequences; strict= would change nothing
+    "B023",  # closures over loop variables are bound explicitly where it matters
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["evidence_depletion"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "smoke: 1-epoch end-to-end runs of the experiment CLIs (tiny sizes)",
+    "equivalence: numerical equivalence against the frozen reference code (needs ED_REFERENCE_CODE)",
+]

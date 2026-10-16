@@ -1,0 +1,389 @@
+{
+ "_meta": {
+  "artifact": "App. D 'Empirical check on trained models' (and the numbers quoted in Sec. 2.2)",
+  "provenance": "per_seed_file + recomputed"
+ },
+ "readout_trained_results": {
+  "config": {
+   "N": 256,
+   "d_model": 64,
+   "n_tokens": 16,
+   "n_iter": 3,
+   "gamma": 3.0,
+   "tau": 0.3,
+   "epochs": 200,
+   "n_slots": 5,
+   "noise_std": 0.1,
+   "K_range_test": [
+    2,
+    4
+   ],
+   "n_test": 1024,
+   "data_seed": 777,
+   "eval_seed": 5000,
+   "C": 0.4
+  },
+  "bound_stats": {
+   "rho": {
+    "median": 0.21372079849243164,
+    "p05": 0.07238659635186195,
+    "p95": 0.5549162656068799
+   },
+   "bound": {
+    "median": 0.9145116806030273,
+    "p05": 0.778033493757248,
+    "p95": 0.9710453614592552
+   },
+   "amp_ratio": {
+    "median": 0.09860324487090111,
+    "p05": 0.041546748206019404,
+    "p95": 0.16085451766848563
+   },
+   "cfac": {
+    "median": 2.1898692010520797,
+    "p05": 1.2139723113534038,
+    "p95": 4.800369327131932
+   },
+   "premise_mincos": {
+    "median": -0.9980827867984772,
+    "p05": -0.9999827802181244,
+    "p95": -0.9434976011514664
+   },
+   "premise_mincos_mag": {
+    "median": 0.35771892964839935,
+    "p05": 0.10757043920457363,
+    "p95": 0.8816599100828166
+   }
+  },
+  "models": {
+   "vanilla_seed0": {
+    "replication_max_err": 0.0,
+    "magnitude_space_undepleted": {
+     "mincos_median": 0.9990642070770264,
+     "mincos_p05": 0.98846834897995,
+     "mincos_p95": 0.9999521970748901,
+     "mincos_mean": 0.9969476461410522,
+     "frac_bound_holds": 0.998046875,
+     "frac_bound_holds_informative": 0.998046875,
+     "n_informative": 1024
+    },
+    "model_space": {
+     "mincos_median": -0.16004762053489685,
+     "mincos_p05": -0.5950486660003662,
+     "mincos_p95": 0.8020257949829102,
+     "mincos_mean": -0.01944858953356743,
+     "frac_bound_holds": 0.0087890625,
+     "frac_bound_holds_informative": 0.0087890625,
+     "n_informative": 1024
+    },
+    "linear_signed_space": {
+     "mincos_median": -0.9966041445732117,
+     "mincos_p05": -0.9998654723167419,
+     "mincos_p95": -0.9365434646606445,
+     "mincos_mean": -0.9844439029693604,
+     "frac_bound_holds": 0.0,
+     "frac_bound_holds_informative": 0.0,
+     "n_informative": 1024
+    },
+    "complex_modulus": {
+     "mincos_median": 0.7329071760177612,
+     "mincos_p05": 0.12485220283269882,
+     "mincos_p95": 0.9800599217414856,
+     "mincos_mean": 0.6467297077178955,
+     "frac_bound_holds": 0.2412109375,
+     "frac_bound_holds_informative": 0.2412109375,
+     "n_informative": 1024
+    },
+    "attention_rows": {
+     "min_pair_cos_median": 0.5518733263015747,
+     "mean_pair_cos_median": 0.8096153736114502
+    }
+   },
+   "vanilla_seed1": {
+    "replication_max_err": 0.0,
+    "magnitude_space_undepleted": {
+     "mincos_median": 0.9965332746505737,
+     "mincos_p05": 0.9825399518013,
+     "mincos_p95": 0.9997844696044922,
+     "mincos_mean": 0.9934961199760437,
+     "frac_bound_holds": 0.9921875,
+     "frac_bound_holds_informative": 0.9921875,
+     "n_informative": 1024
+    },
+    "model_space": {
+     "mincos_median": -0.7131014466285706,
+     "mincos_p05": -0.8496862053871155,
+     "mincos_p95": 0.01458318904042244,
+     "mincos_mean": -0.6096209287643433,
+     "frac_bound_holds": 0.0,
+     "frac_bound_holds_informative": 0.0,
+     "n_informative": 1024
+    },
+    "linear_signed_space": {
+     "mincos_median": -0.997454047203064,
+     "mincos_p05": -0.9998419284820557,
+     "mincos_p95": -0.9399328231811523,
+     "mincos_mean": -0.9804577231407166,
+     "frac_bound_holds": 0.0009765625,
+     "frac_bound_holds_informative": 0.0009765625,
+     "n_informative": 1024
+    },
+    "complex_modulus": {
+     "mincos_median": 0.6946635246276855,
+     "mincos_p05": 0.09675084054470062,
+     "mincos_p95": 0.9803916811943054,
+     "mincos_mean": 0.631317675113678,
+     "frac_bound_holds": 0.234375,
+     "frac_bound_holds_informative": 0.234375,
+     "n_informative": 1024
+    },
+    "attention_rows": {
+     "min_pair_cos_median": 0.34330689907073975,
+     "mean_pair_cos_median": 0.7101304531097412
+    }
+   },
+   "vanilla_seed2": {
+    "replication_max_err": 0.0,
+    "magnitude_space_undepleted": {
+     "mincos_median": 0.9984627962112427,
+     "mincos_p05": 0.985828161239624,
+     "mincos_p95": 0.999923050403595,
+     "mincos_mean": 0.9955506324768066,
+     "frac_bound_holds": 0.9912109375,
+     "frac_bound_holds_informative": 0.9912109375,
+     "n_informative": 1024
+    },
+    "model_space": {
+     "mincos_median": -0.3000867962837219,
+     "mincos_p05": -0.4550575315952301,
+     "mincos_p95": 0.29510825872421265,
+     "mincos_mean": -0.22055143117904663,
+     "frac_bound_holds": 0.0107421875,
+     "frac_bound_holds_informative": 0.0107421875,
+     "n_informative": 1024
+    },
+    "linear_signed_space": {
+     "mincos_median": -0.9988751411437988,
+     "mincos_p05": -0.9999463558197021,
+     "mincos_p95": -0.9742968082427979,
+     "mincos_mean": -0.9904851913452148,
+     "frac_bound_holds": 0.0009765625,
+     "frac_bound_holds_informative": 0.0009765625,
+     "n_informative": 1024
+    },
+    "complex_modulus": {
+     "mincos_median": 0.9813448190689087,
+     "mincos_p05": 0.3781433701515198,
+     "mincos_p95": 0.9993410706520081,
+     "mincos_mean": 0.8910857439041138,
+     "frac_bound_holds": 0.7119140625,
+     "frac_bound_holds_informative": 0.7119140625,
+     "n_informative": 1024
+    },
+    "attention_rows": {
+     "min_pair_cos_median": 0.24095790088176727,
+     "mean_pair_cos_median": 0.6623697876930237
+    }
+   },
+   "evidence_linear_seed0": {
+    "replication_max_err": 0.0,
+    "magnitude_space_undepleted": {
+     "mincos_median": 0.92079758644104,
+     "mincos_p05": 0.7755376696586609,
+     "mincos_p95": 0.9941509366035461,
+     "mincos_mean": 0.9083230495452881,
+     "frac_bound_holds": 0.5439453125,
+     "frac_bound_holds_informative": 0.5439453125,
+     "n_informative": 1024
+    },
+    "model_space": {
+     "mincos_median": 0.19743412733078003,
+     "mincos_p05": -0.4122675359249115,
+     "mincos_p95": 0.9215127825737,
+     "mincos_mean": 0.2193841189146042,
+     "frac_bound_holds": 0.0634765625,
+     "frac_bound_holds_informative": 0.0634765625,
+     "n_informative": 1024
+    },
+    "linear_signed_space": {
+     "mincos_median": 0.6918092966079712,
+     "mincos_p05": -0.1997665911912918,
+     "mincos_p95": 0.9674093723297119,
+     "mincos_mean": 0.5890951156616211,
+     "frac_bound_holds": 0.18359375,
+     "frac_bound_holds_informative": 0.18359375,
+     "n_informative": 1024
+    },
+    "complex_modulus": {
+     "mincos_median": 0.7176096439361572,
+     "mincos_p05": 0.345430463552475,
+     "mincos_p95": 0.9692804217338562,
+     "mincos_mean": 0.6949877738952637,
+     "frac_bound_holds": 0.1982421875,
+     "frac_bound_holds_informative": 0.1982421875,
+     "n_informative": 1024
+    },
+    "attention_rows": {
+     "min_pair_cos_median": 3.1529978627986566e-08,
+     "mean_pair_cos_median": 0.05062180012464523
+    },
+    "magnitude_space_depleted": {
+     "mincos_median": 0.9183083772659302,
+     "mincos_p05": 0.768638014793396,
+     "mincos_p95": 0.9926292896270752,
+     "mincos_mean": 0.9051823019981384,
+     "frac_bound_holds": 0.52734375,
+     "frac_bound_holds_informative": 0.52734375,
+     "n_informative": 1024
+    },
+    "prop2c_effective_bound_after_1_slot": {
+     "rho_eff_median": 4.011617660522461,
+     "bound_eff_median": -0.604647159576416,
+     "frac_vacuous_bound_leq_-1": 0.4775390625
+    }
+   },
+   "evidence_linear_seed1": {
+    "replication_max_err": 0.0,
+    "magnitude_space_undepleted": {
+     "mincos_median": 0.8051086068153381,
+     "mincos_p05": 0.3492477536201477,
+     "mincos_p95": 0.9840461015701294,
+     "mincos_mean": 0.7479877471923828,
+     "frac_bound_holds": 0.2451171875,
+     "frac_bound_holds_informative": 0.2451171875,
+     "n_informative": 1024
+    },
+    "model_space": {
+     "mincos_median": -0.8050656318664551,
+     "mincos_p05": -0.8503893613815308,
+     "mincos_p95": 0.24264365434646606,
+     "mincos_mean": -0.68259596824646,
+     "frac_bound_holds": 0.0048828125,
+     "frac_bound_holds_informative": 0.0048828125,
+     "n_informative": 1024
+    },
+    "linear_signed_space": {
+     "mincos_median": -0.9778062701225281,
+     "mincos_p05": -0.9993752837181091,
+     "mincos_p95": 0.28845617175102234,
+     "mincos_mean": -0.7855712175369263,
+     "frac_bound_holds": 0.015625,
+     "frac_bound_holds_informative": 0.015625,
+     "n_informative": 1024
+    },
+    "complex_modulus": {
+     "mincos_median": 0.3358091711997986,
+     "mincos_p05": 0.05506320297718048,
+     "mincos_p95": 0.9108390212059021,
+     "mincos_mean": 0.38903117179870605,
+     "frac_bound_holds": 0.04296875,
+     "frac_bound_holds_informative": 0.04296875,
+     "n_informative": 1024
+    },
+    "attention_rows": {
+     "min_pair_cos_median": 1.1332125723129138e-05,
+     "mean_pair_cos_median": 0.09383687376976013
+    },
+    "magnitude_space_depleted": {
+     "mincos_median": 0.802266001701355,
+     "mincos_p05": 0.3412300646305084,
+     "mincos_p95": 0.982435941696167,
+     "mincos_mean": 0.7412432432174683,
+     "frac_bound_holds": 0.2265625,
+     "frac_bound_holds_informative": 0.2265625,
+     "n_informative": 1024
+    },
+    "prop2c_effective_bound_after_1_slot": {
+     "rho_eff_median": 1.7645398378372192,
+     "bound_eff_median": 0.2941840589046478,
+     "frac_vacuous_bound_leq_-1": 0.3583984375
+    }
+   },
+   "evidence_linear_seed2": {
+    "replication_max_err": 0.0,
+    "magnitude_space_undepleted": {
+     "mincos_median": 0.8333448171615601,
+     "mincos_p05": 0.5781348943710327,
+     "mincos_p95": 0.9983956813812256,
+     "mincos_mean": 0.8213016986846924,
+     "frac_bound_holds": 0.3271484375,
+     "frac_bound_holds_informative": 0.3271484375,
+     "n_informative": 1024
+    },
+    "model_space": {
+     "mincos_median": -0.09652732312679291,
+     "mincos_p05": -0.3528081178665161,
+     "mincos_p95": 0.9853472113609314,
+     "mincos_mean": 0.10413604229688644,
+     "frac_bound_holds": 0.1240234375,
+     "frac_bound_holds_informative": 0.1240234375,
+     "n_informative": 1024
+    },
+    "linear_signed_space": {
+     "mincos_median": -0.53326416015625,
+     "mincos_p05": -0.983443021774292,
+     "mincos_p95": 0.9905542135238647,
+     "mincos_mean": -0.21320971846580505,
+     "frac_bound_holds": 0.1611328125,
+     "frac_bound_holds_informative": 0.1611328125,
+     "n_informative": 1024
+    },
+    "complex_modulus": {
+     "mincos_median": 0.4528016448020935,
+     "mincos_p05": 0.11660419404506683,
+     "mincos_p95": 0.990947425365448,
+     "mincos_mean": 0.5164749622344971,
+     "frac_bound_holds": 0.1826171875,
+     "frac_bound_holds_informative": 0.1826171875,
+     "n_informative": 1024
+    },
+    "attention_rows": {
+     "min_pair_cos_median": 4.2471554479561746e-05,
+     "mean_pair_cos_median": 0.1893949657678604
+    },
+    "magnitude_space_depleted": {
+     "mincos_median": 0.827055811882019,
+     "mincos_p05": 0.5799012780189514,
+     "mincos_p95": 0.9982849359512329,
+     "mincos_mean": 0.8167492151260376,
+     "frac_bound_holds": 0.30859375,
+     "frac_bound_holds_informative": 0.30859375,
+     "n_informative": 1024
+    },
+    "prop2c_effective_bound_after_1_slot": {
+     "rho_eff_median": 0.3395842909812927,
+     "bound_eff_median": 0.864166259765625,
+     "frac_vacuous_bound_leq_-1": 0.025390625
+    }
+   }
+  }
+ },
+ "kappa_check_recomputed": {
+  "rho_p05_med_p95": [
+   0.072,
+   0.214,
+   0.555
+  ],
+  "kappa_p05_med_p95": [
+   0.269,
+   0.562,
+   0.667
+  ],
+  "bound_1_minus_2kappa2_p05_med_p95": [
+   0.109,
+   0.369,
+   0.855
+  ],
+  "geometric_floor_p05_med_p95": [
+   0.109,
+   0.369,
+   0.855
+  ],
+  "paper": {
+   "kappa_median": 0.56,
+   "bound_median": 0.37,
+   "rho_median": 0.21
+  },
+  "source": "recomputed with experiments/app_d/kappa_mag.py (1024 sinusoid mixtures, seed 777)"
+ }
+}

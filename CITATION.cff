@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "when-attention-collapses"
+version: "1.0.0"
+type: software
+authors:
+  - family-names: Houba
+    given-names: Niklas
+    affiliation: "ETH Zurich"
+license: MIT
+repository-code: "https://github.com/nhouba/when-attention-collapses"
+preferred-citation:
+  type: conference-paper
+  title: "When Attention Collapses: Residual Evidence Modeling for Compositional Inference"
+  authors:
+    - family-names: Houba
+      given-names: Niklas
+      affiliation: "ETH Zurich"
+  collection-title: "Advances in Neural Information Processing Systems"
+  conference:
+    name: "NeurIPS 2026"
+  year: 2026
+  identifiers:
+    - type: other
+      value: "arXiv:2605.02323"
+      description: "arXiv preprint"
+  url: "https://arxiv.org/abs/2605.02323"

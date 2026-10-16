@@ -1,0 +1,998 @@
+{
+ "_meta": {
+  "artifact": "Table 2 and the cosine statements of Sec. 3.1 / App. H",
+  "aggregation": "mean and population std over seeds 0-4",
+  "note_sa_sh": "SA-SH: log-domain Sinkhorn (5 iterations) over the slot-token logits plus N(0, 0.05^2) logit noise at training and evaluation time (method 'sa_sh'). In the original run logs it appears under the name 'mesh'; the method 'mesh' of this release is full MESH.",
+  "note_matching_pursuit": "experiments/matching_pursuit.py writes collapse_rate = 0.0 by construction (there is no attention); it is not a measured collapse value."
+ },
+ "cells": [
+  {
+   "task": "sinusoids",
+   "method": "sparsemax",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.22,
+    "std": 0.14
+   },
+   "per_seed": {
+    "0": 0.475,
+    "1": 0.089,
+    "2": 0.164,
+    "3": 0.135,
+    "4": 0.232
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.219,
+    "std_pop": 0.13615,
+    "std_sample": 0.15222
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "task": "gaussian_bumps",
+   "method": "sparsemax",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.19,
+    "std": 0.03
+   },
+   "per_seed": {
+    "0": 0.239,
+    "1": 0.227,
+    "2": 0.171,
+    "3": 0.146,
+    "4": 0.183
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.1932,
+    "std_pop": 0.03483,
+    "std_sample": 0.03894
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": [
+     "std_pop"
+    ]
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "task": "multiscale",
+   "method": "sparsemax",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.21,
+    "std": 0.04
+   },
+   "per_seed": {
+    "0": 0.182,
+    "1": 0.269,
+    "2": 0.16,
+    "3": 0.241,
+    "4": 0.195
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.2094,
+    "std_pop": 0.03987,
+    "std_sample": 0.04458
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "task": "sinusoids",
+   "method": "entmax15",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.36,
+    "std": 0.11
+   },
+   "per_seed": {
+    "0": 0.332,
+    "1": 0.282,
+    "2": 0.226,
+    "3": 0.413,
+    "4": 0.527
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.356,
+    "std_pop": 0.1053,
+    "std_sample": 0.11773
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": [
+     "std_pop"
+    ]
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "task": "gaussian_bumps",
+   "method": "entmax15",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.26,
+    "std": 0.08
+   },
+   "per_seed": {
+    "0": 0.201,
+    "1": 0.321,
+    "2": 0.169,
+    "3": 0.374,
+    "4": 0.226
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.2582,
+    "std_pop": 0.07697,
+    "std_sample": 0.08605
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "task": "multiscale",
+   "method": "entmax15",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.18,
+    "std": 0.05
+   },
+   "per_seed": {
+    "0": 0.199,
+    "1": 0.159,
+    "2": 0.129,
+    "3": 0.257,
+    "4": 0.142
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.1772,
+    "std_pop": 0.04634,
+    "std_sample": 0.05181
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "task": "sinusoids",
+   "method": "sa_sh",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.07,
+    "std": 0.04
+   },
+   "per_seed": {
+    "0": 0.038,
+    "1": 0.136,
+    "2": 0.092,
+    "3": 0.049,
+    "4": 0.038
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.0706,
+    "std_pop": 0.03828,
+    "std_sample": 0.0428
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "task": "gaussian_bumps",
+   "method": "sa_sh",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.13,
+    "std": 0.03
+   },
+   "per_seed": {
+    "0": 0.17,
+    "1": 0.095,
+    "2": 0.159,
+    "3": 0.107,
+    "4": 0.098
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.1258,
+    "std_pop": 0.03203,
+    "std_sample": 0.03581
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "task": "multiscale",
+   "method": "sa_sh",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.12,
+    "std": 0.03
+   },
+   "per_seed": {
+    "0": 0.149,
+    "1": 0.095,
+    "2": 0.062,
+    "3": 0.155,
+    "4": 0.123
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.1168,
+    "std_pop": 0.03468,
+    "std_sample": 0.03877
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": [
+     "std_pop"
+    ]
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "task": "sinusoids",
+   "method": "mesh_full",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.06,
+    "std": 0.02
+   },
+   "per_seed": {
+    "0": 0.0934,
+    "1": 0.0612,
+    "2": 0.0425,
+    "3": 0.0346,
+    "4": 0.0702
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.06038,
+    "std_pop": 0.02084,
+    "std_sample": 0.0233
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "per_seed_file",
+   "source": "raw/mesh_full_ablation_results.json"
+  },
+  {
+   "task": "gaussian_bumps",
+   "method": "mesh_full",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.18,
+    "std": 0.02
+   },
+   "per_seed": {
+    "0": 0.193,
+    "1": 0.2017,
+    "2": 0.2016,
+    "3": 0.1435,
+    "4": 0.1644
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.18084,
+    "std_pop": 0.02315,
+    "std_sample": 0.02588
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": []
+   },
+   "provenance": "per_seed_file",
+   "source": "raw/mesh_full_ablation_results.json"
+  },
+  {
+   "task": "multiscale",
+   "method": "mesh_full",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.12,
+    "std": 0.03
+   },
+   "per_seed": {
+    "0": 0.078,
+    "1": 0.0982,
+    "2": 0.1331,
+    "3": 0.1157,
+    "4": 0.1606
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.11712,
+    "std_pop": 0.02841,
+    "std_sample": 0.03177
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "per_seed_file",
+   "source": "raw/mesh_full_ablation_results.json"
+  },
+  {
+   "task": "sinusoids",
+   "method": "coverage",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.78,
+    "std": 0.06
+   },
+   "per_seed": {
+    "0": 0.781,
+    "1": 0.771,
+    "2": 0.772,
+    "3": 0.893,
+    "4": 0.691
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.7816,
+    "std_pop": 0.06453,
+    "std_sample": 0.07215
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": [
+     "std_pop"
+    ]
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "task": "gaussian_bumps",
+   "method": "coverage",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.57,
+    "std": 0.13
+   },
+   "per_seed": {
+    "0": 0.726,
+    "1": 0.464,
+    "2": 0.709,
+    "3": 0.385,
+    "4": 0.548
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.5664,
+    "std_pop": 0.13382,
+    "std_sample": 0.14961
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "task": "multiscale",
+   "method": "coverage",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.7,
+    "std": 0.12
+   },
+   "per_seed": {
+    "0": 0.823,
+    "1": 0.684,
+    "2": 0.584,
+    "3": 0.549,
+    "4": 0.86
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.7,
+    "std_pop": 0.12429,
+    "std_sample": 0.13896
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "task": "sinusoids",
+   "method": "coverage_loss",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.23,
+    "std": 0.06
+   },
+   "per_seed": {
+    "0": 0.186,
+    "1": 0.165,
+    "2": 0.196,
+    "3": 0.289,
+    "4": 0.317
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.2306,
+    "std_pop": 0.06061,
+    "std_sample": 0.06776
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "task": "gaussian_bumps",
+   "method": "coverage_loss",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.3,
+    "std": 0.04
+   },
+   "per_seed": {
+    "0": 0.261,
+    "1": 0.35,
+    "2": 0.34,
+    "3": 0.282,
+    "4": 0.264
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.2994,
+    "std_pop": 0.03805,
+    "std_sample": 0.04254
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "task": "multiscale",
+   "method": "coverage_loss",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.24,
+    "std": 0.04
+   },
+   "per_seed": {
+    "0": 0.259,
+    "1": 0.207,
+    "2": 0.193,
+    "3": 0.23,
+    "4": 0.296
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.237,
+    "std_pop": 0.03701,
+    "std_sample": 0.04138
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "task": "sinusoids",
+   "method": "stickbreaking",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.47,
+    "std": 0.2
+   },
+   "per_seed": {
+    "0": 0.275,
+    "1": 0.329,
+    "2": 0.763,
+    "3": 0.315,
+    "4": 0.643
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.465,
+    "std_pop": 0.19879,
+    "std_sample": 0.22225
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": [
+     "mean"
+    ]
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')",
+   "log_conflicts": {
+    "note": "seeds 3 and 4 were run twice (GPU nondeterminism between reruns): the run used for the paper gives 0.315 and 0.643 (mean over seeds 0.465); the other copy gives a mean of 0.455."
+   }
+  },
+  {
+   "task": "gaussian_bumps",
+   "method": "stickbreaking",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.76,
+    "std": 0.32
+   },
+   "per_seed": {
+    "0": 0.128,
+    "1": 0.986,
+    "2": 0.965,
+    "3": 0.883,
+    "4": 0.822
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.7568,
+    "std_pop": 0.31983,
+    "std_sample": 0.35758
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "task": "multiscale",
+   "method": "stickbreaking",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.43,
+    "std": 0.19
+   },
+   "per_seed": {
+    "0": 0.539,
+    "1": 0.605,
+    "2": 0.425,
+    "3": 0.074,
+    "4": 0.494
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.4274,
+    "std_pop": 0.18619,
+    "std_sample": 0.20816
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source alternatives/*; SA-SH ran under the name 'mesh')"
+  },
+  {
+   "task": "sinusoids",
+   "method": "evidence_linear",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.07,
+    "std": 0.07
+   },
+   "per_seed": {
+    "0": 0.0202,
+    "1": 0.0075,
+    "2": 0.0764,
+    "3": 0.1967,
+    "4": 0.043
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.06876,
+    "std_pop": 0.06812,
+    "std_sample": 0.07616
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": []
+   },
+   "provenance": "per_seed_file",
+   "source": "raw/synthetic_main_ablation_results.json"
+  },
+  {
+   "task": "sinusoids",
+   "method": "vanilla",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.32,
+    "std": 0.09
+   },
+   "per_seed": {
+    "0": 0.2754,
+    "1": 0.201,
+    "2": 0.3536,
+    "3": 0.4577,
+    "4": 0.3096
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.31946,
+    "std_pop": 0.08526,
+    "std_sample": 0.09532
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": [
+     "std_pop"
+    ]
+   },
+   "provenance": "per_seed_file",
+   "source": "raw/synthetic_main_ablation_results.json"
+  },
+  {
+   "task": "gaussian_bumps",
+   "method": "evidence_linear",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.03,
+    "std": 0.03
+   },
+   "per_seed": {
+    "0": 0.0127,
+    "1": 0.019,
+    "2": 0.0926,
+    "3": 0.0,
+    "4": 0.0105
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.02696,
+    "std_pop": 0.03339,
+    "std_sample": 0.03733
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": []
+   },
+   "provenance": "per_seed_file",
+   "source": "raw/synthetic_main_ablation_results.json"
+  },
+  {
+   "task": "gaussian_bumps",
+   "method": "vanilla",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.26,
+    "std": 0.07
+   },
+   "per_seed": {
+    "0": 0.33,
+    "1": 0.2682,
+    "2": 0.1942,
+    "3": 0.1642,
+    "4": 0.3574
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.2628,
+    "std_pop": 0.07473,
+    "std_sample": 0.08355
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": [
+     "std_pop"
+    ]
+   },
+   "provenance": "per_seed_file",
+   "source": "raw/synthetic_main_ablation_results.json"
+  },
+  {
+   "task": "multiscale",
+   "method": "evidence_linear",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.01,
+    "std": 0.01
+   },
+   "per_seed": {
+    "0": 0.0026,
+    "1": 0.0242,
+    "2": 0.0051,
+    "3": 0.0026,
+    "4": 0.0
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.0069,
+    "std_pop": 0.0088,
+    "std_sample": 0.00984
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "per_seed_file",
+   "source": "raw/synthetic_main_ablation_results.json"
+  },
+  {
+   "task": "multiscale",
+   "method": "vanilla",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.22,
+    "std": 0.02
+   },
+   "per_seed": {
+    "0": 0.1811,
+    "1": 0.2196,
+    "2": 0.2198,
+    "3": 0.2323,
+    "4": 0.2418
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.21892,
+    "std_pop": 0.02066,
+    "std_sample": 0.0231
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "per_seed_file",
+   "source": "raw/synthetic_main_ablation_results.json"
+  }
+ ],
+ "cosine": [
+  {
+   "task": "sinusoids",
+   "method": "mesh_full",
+   "metric": "cosine_overlap",
+   "paper": {
+    "mean": 0.64,
+    "std": null
+   },
+   "per_seed": {
+    "0": 0.7898,
+    "1": 0.6927,
+    "2": 0.5398,
+    "3": 0.5163,
+    "4": 0.6755
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.64282,
+    "std_pop": 0.10176,
+    "std_sample": 0.11378
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "per_seed_file",
+   "source": "raw/mesh_full_ablation_results.json (field mean_attn_overlap)"
+  },
+  {
+   "task": "gaussian_bumps",
+   "method": "mesh_full",
+   "metric": "cosine_overlap",
+   "paper": {
+    "mean": 0.89,
+    "std": null
+   },
+   "per_seed": {
+    "0": 0.8385,
+    "1": 0.9099,
+    "2": 0.9299,
+    "3": 0.8823,
+    "4": 0.8946
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.89104,
+    "std_pop": 0.03071,
+    "std_sample": 0.03433
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "per_seed_file",
+   "source": "raw/mesh_full_ablation_results.json (field mean_attn_overlap)"
+  },
+  {
+   "task": "multiscale",
+   "method": "mesh_full",
+   "metric": "cosine_overlap",
+   "paper": {
+    "mean": 0.84,
+    "std": null
+   },
+   "per_seed": {
+    "0": 0.7863,
+    "1": 0.8101,
+    "2": 0.8798,
+    "3": 0.8473,
+    "4": 0.8599
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.83668,
+    "std_pop": 0.03393,
+    "std_sample": 0.03793
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "per_seed_file",
+   "source": "raw/mesh_full_ablation_results.json (field mean_attn_overlap)"
+  }
+ ],
+ "dspn_peak_not_in_paper": {
+  "sinusoids": {
+   "per_seed": {
+    "0": 0.447,
+    "1": 0.472,
+    "2": 0.215,
+    "3": 0.161,
+    "4": 0.267
+   },
+   "n": 5,
+   "mean": 0.3124,
+   "std_pop": 0.12495,
+   "std_sample": 0.1397
+  },
+  "gaussian_bumps": {
+   "per_seed": {
+    "0": 0.774,
+    "1": 0.92,
+    "2": 0.453,
+    "3": 0.835,
+    "4": 0.887
+   },
+   "n": 5,
+   "mean": 0.7738,
+   "std_pop": 0.16784,
+   "std_sample": 0.18765
+  },
+  "multiscale": {
+   "per_seed": {
+    "0": 0.227,
+    "1": 0.227,
+    "2": 0.177,
+    "3": 0.231,
+    "4": 0.3
+   },
+   "n": 5,
+   "mean": 0.2324,
+   "std_pop": 0.03924,
+   "std_sample": 0.04387
+  }
+ },
+ "cosine_claims_reported_only": {
+  "claim": "every alternative >= 0.53 cosine overlap; non-slot set predictor (dspn) >= 0.53; evidence depletion 0.27 / 0.14 on Gaussians / multi-scale (Sec. 3.1, App. H)",
+  "provenance": "reported_only",
+  "sinusoids_cosine_5seed_means": {
+   "vanilla": 0.896,
+   "sequential": 0.949,
+   "sa_sh": 0.765,
+   "sparsemax": 0.606,
+   "entmax15": 0.802,
+   "coverage": 0.925,
+   "coverage_loss": 0.893,
+   "stickbreaking": 0.814,
+   "dspn": 0.894,
+   "evidence_binary": 0.469,
+   "evidence_linear": 0.386,
+   "evidence_quadratic": 0.352
+  },
+  "status": "Summary values as reported in the paper; per-seed files not retained. The Gaussian and multi-scale cosine overlaps of most alternatives can only be regenerated by re-running (field mean_attn_overlap).",
+  "multiscale_cosine_reported": {
+   "dspn": 0.531,
+   "sparsemax": 0.703,
+   "evidence_quadratic": 0.641,
+   "evidence_linear": 0.136
+  },
+  "gaussian_bumps_cosine_reported": {
+   "evidence_linear": 0.273
+  }
+ }
+}

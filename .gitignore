@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# Environments
+.venv/
+venv/
+
+# Tooling
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Data and experiment outputs (large / regenerated)
+/data/
+results/runs/
+results/figures/
+*.pt
+*.tar.gz
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/

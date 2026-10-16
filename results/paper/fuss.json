@@ -1,0 +1,549 @@
+{
+ "_meta": {
+  "artifacts": [
+   "Table 1 FUSS column",
+   "Figure 1 group D",
+   "Table 13 (App. J)",
+   "Table 8 FUSS column",
+   "Sec. 3.2 / App. J SI-SDR diagnostics"
+  ],
+  "aggregation": "mean and population std over seeds 0-4",
+  "note": "fuss_rerun holds the per-seed values of the run behind every FUSS number in the camera-ready paper (Table 1, Figure 1, Table 13, Table 8, SI-SDR diagnostics); the released experiments/fuss.py reproduces it. earlier_run holds the run reported in the submitted version, made with an earlier version of the FUSS script (mentioned in App. J of the camera-ready)."
+ },
+ "fuss_rerun": [
+  {
+   "task": "fuss",
+   "method": "vanilla",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.3,
+    "std": 0.05
+   },
+   "per_seed": {
+    "0": 0.243,
+    "1": 0.326,
+    "2": 0.366,
+    "3": 0.23,
+    "4": 0.316
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.2962,
+    "std_pop": 0.0517,
+    "std_sample": 0.0578
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source fuss_rerun/*)",
+   "si_sdri_dB": {
+    "n": 5,
+    "mean": 1.0758,
+    "std_pop": 0.14245,
+    "std_sample": 0.15927,
+    "per_seed": {
+     "0": 1.151,
+     "1": 0.911,
+     "2": 0.916,
+     "3": 1.278,
+     "4": 1.123
+    }
+   },
+   "si_sdr_dB": {
+    "n": 5,
+    "mean": -0.5828,
+    "std_pop": 0.16106,
+    "std_sample": 0.18007
+   },
+   "si_sdr_mixture_dB": {
+    "n": 5,
+    "mean": -1.6582,
+    "std_pop": 0.03652,
+    "std_sample": 0.04083
+   },
+   "cosine_paper": 0.79,
+   "cosine_provenance": "reported_only",
+   "cosine_reported": 0.794
+  },
+  {
+   "task": "fuss",
+   "method": "sequential",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.94,
+    "std": 0.02
+   },
+   "per_seed": {
+    "0": 0.963,
+    "1": 0.923,
+    "2": 0.958,
+    "3": 0.924,
+    "4": 0.94
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.9416,
+    "std_pop": 0.01664,
+    "std_sample": 0.01861
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source fuss_rerun/*)",
+   "si_sdri_dB": {
+    "n": 5,
+    "mean": -1.1362,
+    "std_pop": 1.9597,
+    "std_sample": 2.19101,
+    "per_seed": {
+     "0": -0.931,
+     "1": 0.907,
+     "2": -4.569,
+     "3": 0.574,
+     "4": -1.662
+    }
+   },
+   "si_sdr_dB": {
+    "n": 5,
+    "mean": -2.6854,
+    "std_pop": 2.11215,
+    "std_sample": 2.36145
+   },
+   "si_sdr_mixture_dB": {
+    "n": 5,
+    "mean": -1.5494,
+    "std_pop": 0.20953,
+    "std_sample": 0.23426
+   },
+   "cosine_paper": 0.97,
+   "cosine_provenance": "reported_only",
+   "cosine_reported": 0.97
+  },
+  {
+   "task": "fuss",
+   "method": "evidence_linear",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.04,
+    "std": 0.01
+   },
+   "per_seed": {
+    "0": 0.037,
+    "1": 0.035,
+    "2": 0.039,
+    "3": 0.056,
+    "4": 0.024
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.0382,
+    "std_pop": 0.0103,
+    "std_sample": 0.01152
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source fuss_rerun/*)",
+   "si_sdri_dB": {
+    "n": 5,
+    "mean": -0.6586,
+    "std_pop": 0.80307,
+    "std_sample": 0.89786,
+    "per_seed": {
+     "0": -0.235,
+     "1": -0.195,
+     "2": -1.249,
+     "3": 0.297,
+     "4": -1.911
+    }
+   },
+   "si_sdr_dB": {
+    "n": 5,
+    "mean": -2.3048,
+    "std_pop": 0.93674,
+    "std_sample": 1.0473
+   },
+   "si_sdr_mixture_dB": {
+    "n": 5,
+    "mean": -1.646,
+    "std_pop": 0.14892,
+    "std_sample": 0.1665
+   },
+   "cosine_paper": 0.5,
+   "cosine_provenance": "reported_only",
+   "cosine_reported": 0.499
+  },
+  {
+   "task": "fuss",
+   "method": "evidence_quadratic",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.26,
+    "std": 0.04
+   },
+   "per_seed": {
+    "0": 0.299,
+    "1": 0.247,
+    "2": 0.259,
+    "3": 0.278,
+    "4": 0.192
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.255,
+    "std_pop": 0.03609,
+    "std_sample": 0.04035
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source fuss_rerun/*)",
+   "si_sdri_dB": {
+    "n": 5,
+    "mean": -0.399,
+    "std_pop": 1.04371,
+    "std_sample": 1.1669,
+    "per_seed": {
+     "0": 0.643,
+     "1": -1.757,
+     "2": -0.263,
+     "3": 0.805,
+     "4": -1.423
+    }
+   },
+   "si_sdr_dB": {
+    "n": 5,
+    "mean": -1.9712,
+    "std_pop": 1.15689,
+    "std_sample": 1.29344
+   },
+   "si_sdr_mixture_dB": {
+    "n": 5,
+    "mean": -1.572,
+    "std_pop": 0.1419,
+    "std_sample": 0.15864
+   }
+  },
+  {
+   "task": "fuss",
+   "method": "sa_sh",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": null,
+    "std": null,
+    "note": "not reported in the paper"
+   },
+   "per_seed": {
+    "0": 0.041,
+    "1": 0.044,
+    "2": 0.008,
+    "3": 0.022,
+    "4": 0.018
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.0266,
+    "std_pop": 0.01379,
+    "std_sample": 0.01542
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source fuss_rerun/*)",
+   "si_sdri_dB": {
+    "n": 5,
+    "mean": 0.8528,
+    "std_pop": 0.12033,
+    "std_sample": 0.13454,
+    "per_seed": {
+     "0": 0.833,
+     "1": 0.672,
+     "2": 0.811,
+     "3": 1.038,
+     "4": 0.91
+    }
+   },
+   "si_sdr_dB": {
+    "n": 5,
+    "mean": -0.2742,
+    "std_pop": 0.11561,
+    "std_sample": 0.12926
+   },
+   "si_sdr_mixture_dB": {
+    "n": 5,
+    "mean": -1.1274,
+    "std_pop": 0.02968,
+    "std_sample": 0.03318
+   },
+   "note": "SA-SH (logged under the name 'mesh'). Not reported in the paper's tables; its SI-SDRi (+0.85 dB) lies inside the quoted -2.1 to +1.1 dB range."
+  },
+  {
+   "task": "fuss",
+   "method": "sparsemax",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": null,
+    "std": null,
+    "note": "not reported in the paper"
+   },
+   "per_seed": {
+    "0": 0.206,
+    "1": 0.159,
+    "2": 0.188,
+    "3": 0.204,
+    "4": 0.254
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.2022,
+    "std_pop": 0.03088,
+    "std_sample": 0.03453
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "run_log",
+   "source": "raw/log_records.json (source fuss_rerun/*)",
+   "si_sdri_dB": {
+    "n": 5,
+    "mean": -2.0552,
+    "std_pop": 0.60498,
+    "std_sample": 0.67638,
+    "per_seed": {
+     "0": -1.625,
+     "1": -1.522,
+     "2": -1.812,
+     "3": -2.123,
+     "4": -3.194
+    }
+   },
+   "si_sdr_dB": {
+    "n": 5,
+    "mean": -4.2472,
+    "std_pop": 0.64416,
+    "std_sample": 0.72019
+   },
+   "si_sdr_mixture_dB": {
+    "n": 5,
+    "mean": -2.1924,
+    "std_pop": 0.04581,
+    "std_sample": 0.05122
+   }
+  }
+ ],
+ "earlier_run": [
+  {
+   "task": "fuss",
+   "method": "vanilla",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.29,
+    "std": 0.06
+   },
+   "per_seed": {
+    "0": 0.2196,
+    "1": 0.3808,
+    "2": 0.3413,
+    "3": 0.3117,
+    "4": 0.2206
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.2948,
+    "std_pop": 0.06481,
+    "std_sample": 0.07246
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": [
+     "mean",
+     "std_pop"
+    ]
+   },
+   "provenance": "per_seed_file",
+   "source": "earlier_run/fuss_v2_fuss_results.json",
+   "paper_per_seed": [
+    0.22,
+    0.38,
+    0.34,
+    0.31,
+    0.22
+   ]
+  },
+  {
+   "task": "fuss",
+   "method": "sequential",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.93,
+    "std": 0.02
+   },
+   "per_seed": {
+    "0": 0.941,
+    "1": 0.9116,
+    "2": 0.9411,
+    "3": 0.9072,
+    "4": 0.95
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.93018,
+    "std_pop": 0.01733,
+    "std_sample": 0.01938
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "per_seed_file",
+   "source": "earlier_run/fuss_v2_fuss_results.json",
+   "paper_per_seed": [
+    0.94,
+    0.91,
+    0.94,
+    0.91,
+    0.95
+   ]
+  },
+  {
+   "task": "fuss",
+   "method": "evidence_linear",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.05,
+    "std": 0.02
+   },
+   "per_seed": {
+    "0": 0.0931,
+    "1": 0.0402,
+    "2": 0.0385,
+    "3": 0.0449,
+    "4": 0.0396
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.05126,
+    "std_pop": 0.02103,
+    "std_sample": 0.02352
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": true,
+    "at_rounding_boundary": []
+   },
+   "provenance": "per_seed_file",
+   "source": "earlier_run/fuss_v2_fuss_results.json",
+   "paper_per_seed": [
+    0.09,
+    0.04,
+    0.04,
+    0.04,
+    0.04
+   ]
+  },
+  {
+   "task": "fuss",
+   "method": "evidence_quadratic",
+   "metric": "peak_overlap",
+   "paper": {
+    "mean": 0.31,
+    "std": 0.07
+   },
+   "per_seed": {
+    "0": 0.4223,
+    "1": 0.2739,
+    "2": 0.2484,
+    "3": 0.3575,
+    "4": 0.2287
+   },
+   "recomputed": {
+    "n": 5,
+    "mean": 0.30616,
+    "std_pop": 0.0728,
+    "std_sample": 0.0814
+   },
+   "check": {
+    "mean_ok": true,
+    "std_pop_ok": true,
+    "std_sample_ok": false,
+    "at_rounding_boundary": []
+   },
+   "provenance": "per_seed_file",
+   "source": "earlier_run/fuss_v2_fuss_results.json",
+   "paper_per_seed": [
+    0.42,
+    0.27,
+    0.25,
+    0.36,
+    0.23
+   ]
+  }
+ ],
+ "param_baseline": {
+  "val_sources": 2516,
+  "MAE_train_median": {
+   "freq": 0.0388,
+   "amp": 0.0041,
+   "centroid": 0.0621
+  },
+  "MAE_train_mean": {
+   "freq": 0.0549,
+   "amp": 0.0048,
+   "centroid": 0.0806
+  },
+  "model_seed0_greedy": {
+   "freq": 0.057,
+   "amp": 0.0046,
+   "centroid": 0.081
+  },
+  "paper": "per-source spectral parameter estimates did not rise meaningfully above simple baselines (qualitative)",
+  "provenance": "run_log",
+  "source": "printed output of experiments/fuss_param_baseline.py (the constant is fitted on the sources of the first 5000 training mixtures = 12615 sources)"
+ },
+ "sisdr_range_paper": {
+  "min_dB": -2.1,
+  "max_dB": 1.1,
+  "oracle_gain_dB": 7.7
+ },
+ "sisdr_oracle": {
+  "n_mixtures": 300,
+  "seed": 42,
+  "floor_dB": -1.716,
+  "IRM_dB": 18.114,
+  "rank1_oracle_dB": 11.657,
+  "rank1_chunk_dB": 10.769,
+  "rank1_model_faithful_dB": 5.948,
+  "gap_model_faithful_minus_floor_dB": 7.66,
+  "paper": "+7.7 dB oracle mask from the same readout family",
+  "provenance": "run_log",
+  "source": "printed output of experiments/fuss_sisdr_oracle.py"
+ }
+}
